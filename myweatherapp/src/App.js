@@ -32,7 +32,7 @@ function App() {
   if (weatherSelector.weatherinfo) {
     details = (
       <div>
-        <h2>Weather Infor</h2>
+        <h2>Weather Information</h2>
         <p>City and Country:{' '}
           {weatherSelector.weatherinfo.location.name},{' '}{' '}
           <span>{weatherSelector.weatherinfo.location.country}</span>{' '}
@@ -55,10 +55,11 @@ function App() {
         </header>
       </div>
 
-      <main>
+      <main >
         <form onSubmit={getWeatherdata}>
           <div>
             <input
+            className='input'
               type='text'
               name='name'
               placeholder='type in city name'
@@ -66,7 +67,7 @@ function App() {
             />
           </div>
           {/* <input type="submit" value="Check the weather"/>  */}
-          <button>Submit</button>
+          <button className='btn'>Submit</button>
         </form>
         <div className='Card'>
            {details}
