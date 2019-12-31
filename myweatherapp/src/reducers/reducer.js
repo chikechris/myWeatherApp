@@ -1,9 +1,9 @@
-import {combineReducers} from "redux"
-import { weatherInfo} from "./weatherReducer"
+import { combineReducers } from 'redux';
+import { weatherInfo } from './weatherReducer';
 
-// combine reucers
+// combine reducers
 const reducers = combineReducers({
   WeatherInfo: weatherInfo
-})
+});
 
-export default reducers
+export default reducers;
