@@ -23,6 +23,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
    border-radius: 35px;
+   margin: auto;
 }
 
 .Card {
@@ -34,8 +35,10 @@
   font-size: 20px;
   border: 2px solid;
  border-radius: 50px;
- width: 100%;
-
+ width: 500px;
+ margin: auto;
+ background-color: DodgerBlue;
+color: white;
 }
 .btn{
   padding: 8px;
@@ -57,8 +60,8 @@ transition: all 0.4s ease 0s;
   padding: 10px; 
   border-radius: 5px;
   margin-left: 10px;
-  /* background-color: grey; */
 }
+
 .App-link {
   color: #61dafb;
 }
