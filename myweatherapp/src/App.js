@@ -28,6 +28,10 @@ function App() {
     }
   };
 
+  function toFahrenheit(celsius) {
+    return (celsius * 9 / 5) + 32
+  }
+
   let details = '';
   if (weatherSelector.weatherinfo) {
     details = (
@@ -38,7 +42,7 @@ function App() {
           <span>{weatherSelector.weatherinfo.location.country}</span>{' '}
         </p>
         <p>Observation Time: {weatherSelector.weatherinfo.current.observation_time} </p>
-        <p>Temp: {weatherSelector.weatherinfo.current.temperature} °C</p>
+        <p>Temp: {toFahrenheit(weatherSelector.weatherinfo.current.temperature)} °F</p>
            <img src={weatherSelector.weatherinfo.current.weather_icons}/>
            <p>{weatherSelector.weatherinfo.current.weather_descriptions}</p>
       </div>
@@ -48,7 +52,7 @@ function App() {
   }
 
   return (
-    <React.Fragment>
+    <>
       <div className='App'>
         <header className='App-header'>
           <h1>Weather App</h1>
@@ -74,7 +78,7 @@ function App() {
         </div>
         
       </main>
-    </React.Fragment>
+    </>
   );
 }
 
