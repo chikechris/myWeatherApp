@@ -16,7 +16,8 @@ function App() {
 
   useEffect(() => {
     getWeatherAction('paris')
-  }, {})
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const getWeatherdata = e => {
     e.preventDefault();
@@ -48,9 +49,9 @@ function App() {
       </div>
     );
   } 
-  // else {
-  //   details = <p>Please Type in a cityname</p>;
-  // }
+  else {
+    details = <p>Please Type in a cityname</p>;
+  }
 
   return (
     <>
