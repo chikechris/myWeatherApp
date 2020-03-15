@@ -47,9 +47,10 @@ function App() {
            <p>{weatherSelector.weatherinfo.current.weather_descriptions}</p>
       </div>
     );
-  } else {
-    details = <p>Please Type in a cityname</p>;
-  }
+  } 
+  // else {
+  //   details = <p>Please Type in a cityname</p>;
+  // }
 
   return (
     <>
